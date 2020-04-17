@@ -18,3 +18,33 @@ class main:
         for x in self.logam :
             print (count,".",x)
             count=count+1
+
+    def penjualan_fitur(self):
+        print("Masukkan jenis logam yang ingin anda jual")
+        count=1
+        for x in self.logam :
+            print (count,".",x)
+            count=count+1
+
+    def about_fitur(self):
+        print("Berikut adalah Value Logam pada hari ini (per gram):")
+        count=1
+        for x in self.logam :
+            print (count,".",x,"\t: Rp ",self.harga[count-1])
+            count=count+1
+
+    def pembelian_transaksi(self,angka1,angka2):
+        biaya=self.harga[angka1-1]*angka2*105/100
+        print(f"Anda ingin membeli logam {self.logam[angka1-1]} dengan harga {biaya}")
+        print("----------------------------------------------------------------")
+        print("Lanjutkan Pembelian?")
+        print("1.Ya")
+        print("2.Tidak")
+
+    def penjualan_transaksi(self,angka1,angka2):
+        biaya=self.harga[angka1-1]*angka2*90/100
+        print(f"Anda ingin menjual logam {self.logam[angka1-1]} dengan harga {biaya}")
+        print("----------------------------------------------------------------")
+        print("Lanjutkan Pembelian?")
+        print("1.Ya")
+        print("2.Tidak")

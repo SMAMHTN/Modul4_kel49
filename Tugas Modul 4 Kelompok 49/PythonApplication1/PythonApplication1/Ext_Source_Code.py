@@ -3,8 +3,8 @@ class main:
         self.nama = nama
         self.email = email
         self.HP = HP
-        self.logam = ["Emas","Logam"]
-        self.harga = [732600,216044]
+        self.logam = ["Emas","Logam","Platinum","Rhodium"]
+        self.harga = [732600,216044,385872,1081241]
 
     def welcome (self):
         print(f"Selamat datang, {self.nama} ! Selamat bertransaksi di Mesin Toko Emas Otomatis Kelompok 49!")
@@ -35,7 +35,7 @@ class main:
 
     def pembelian_transaksi (self,angka1,angka2):
         biaya = self.harga[angka1 - 1] * angka2 * 105 / 100
-        print(f"Anda ingin membeli logam {self.logam[angka1-1]} dengan harga {biaya}")
+        print(f"Anda ingin membeli logam {self.logam[angka1-1]} dengan harga Rp {biaya}")
         print("----------------------------------------------------------------")
         print("Lanjutkan Pembelian?")
         print("1.Ya")
@@ -43,7 +43,7 @@ class main:
 
     def penjualan_transaksi (self,angka1,angka2):
         biaya = self.harga[angka1 - 1] * angka2 * 90 / 100
-        print(f"Anda ingin menjual logam {self.logam[angka1-1]} dengan harga {biaya}")
+        print(f"Anda ingin menjual logam {self.logam[angka1-1]} dengan harga Rp {biaya}")
         print("----------------------------------------------------------------")
         print("Lanjutkan Pembelian?")
         print("1.Ya")

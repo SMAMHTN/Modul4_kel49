@@ -7,7 +7,7 @@
 	$bil1 = 7;
 	$bil2 = 8;
 	$hasil = hitung($bil1, $bil2);
-	echo "ini dikerjakan oleh function hitung <br>";
+	echo "ini dikerjakan oleh function  hitung <br>";
 	echo "angka yang akan dihitung adalah $bil1 dan $bil2 <br>";
 	echo "hasil hitung menggunakan function hitung yaitu : $hasil";
 	

@@ -3,8 +3,8 @@ class main:
         self.nama=nama
         self.email=email
         self.HP=HP
-        self.logam=["Emas","Logam","Emas Putih","Perak"]
-        self.harga=[732600,216044,361000,396000]
+        self.logam=["Emas","Logam","Emas Putih","Perak","Platinum","Rhodium"]
+        self.harga=[732600,216044,361000,396000,385872,1081241]
 
     def welcome (self):
         print(f"Selamat datang, {self.nama} ! Selamat bertransaksi di Mesin Toko Emas Otomatis Kelompok 49!")
@@ -12,38 +12,38 @@ class main:
         print("Penjualan\t:5%")
         print("Pembelian\t:10%")
 
-    def pembelian_fitur(self):
+    def pembelian_fitur (self):
         print("Masukkan jenis logam yang ingin anda beli")
-        count=1
+        count = 1
         for x in self.logam :
-            print (count,".",x)
-            count=count+1
+            print(count,".",x)
+            count = count + 1
 
-    def penjualan_fitur(self):
+    def penjualan_fitur (self):
         print("Masukkan jenis logam yang ingin anda jual")
-        count=1
+        count = 1
         for x in self.logam :
-            print (count,".",x)
-            count=count+1
+            print(count,".",x)
+            count = count + 1
 
-    def about_fitur(self):
+    def about_fitur (self):
         print("Berikut adalah Value Logam pada hari ini (per gram):")
-        count=1
+        count = 1
         for x in self.logam :
-            print (count,".",x,"\t: Rp ",self.harga[count-1])
-            count=count+1
+            print(count,".",x,"\t: Rp ",self.harga[count - 1])
+            count = count + 1
 
-    def pembelian_transaksi(self,angka1,angka2):
-        biaya=self.harga[angka1-1]*angka2*105/100
-        print(f"Anda ingin membeli logam {self.logam[angka1-1]} dengan harga {biaya}")
+    def pembelian_transaksi (self,angka1,angka2):
+        biaya = self.harga[angka1 - 1] * angka2 * 105 / 100
+        print(f"Anda ingin membeli logam {self.logam[angka1-1]} dengan harga Rp {biaya}")
         print("----------------------------------------------------------------")
         print("Lanjutkan Pembelian?")
         print("1.Ya")
         print("2.Tidak")
 
-    def penjualan_transaksi(self,angka1,angka2):
-        biaya=self.harga[angka1-1]*angka2*90/100
-        print(f"Anda ingin menjual logam {self.logam[angka1-1]} dengan harga {biaya}")
+    def penjualan_transaksi (self,angka1,angka2):
+        biaya = self.harga[angka1 - 1] * angka2 * 90 / 100
+        print(f"Anda ingin menjual logam {self.logam[angka1-1]} dengan harga Rp {biaya}")
         print("----------------------------------------------------------------")
         print("Lanjutkan Pembelian?")
         print("1.Ya")

@@ -3,8 +3,8 @@ class main:
         self.nama=nama
         self.email=email
         self.HP=HP
-        self.logam=["Emas","Logam"]
-        self.harga=[732600,216044]
+        self.logam=["Emas","Logam","Emas Putih","Perak"]
+        self.harga=[732600,216044,361000,396000]
 
     def welcome (self):
         print(f"Selamat datang, {self.nama} ! Selamat bertransaksi di Mesin Toko Emas Otomatis Kelompok 49!")

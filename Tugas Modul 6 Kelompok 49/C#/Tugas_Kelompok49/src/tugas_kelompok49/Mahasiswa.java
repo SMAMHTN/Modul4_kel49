@@ -1,14 +1,12 @@
 package tugas_kelompok49;
 
 public class Mahasiswa {
-   //deklarasi atribut
     private String a;
     private String b;
     private String c;
     private String d;
     private String e;
 
-    //membuat setter
     public void seta(String a) {
         this.a = a;
     }
@@ -25,7 +23,6 @@ public class Mahasiswa {
         this.e = e;
     }
     
-    //membuat getter
     public String geta(){
         return a;
     }

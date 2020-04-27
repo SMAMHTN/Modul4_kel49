@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Tugas_Modul7_Kelompok49", "Tugas_Modul7_Kelompok49\Tugas_Modul7_Kelompok49.pyproj", "{E8FBBAAE-4607-44F6-AD64-0F2210BACD86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8FBBAAE-4607-44F6-AD64-0F2210BACD86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8FBBAAE-4607-44F6-AD64-0F2210BACD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89893F16-E056-4DB6-8842-E1D83FBD99D9}
+	EndGlobalSection
+EndGlobal

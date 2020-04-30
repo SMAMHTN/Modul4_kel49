@@ -26,7 +26,7 @@ while a == 1:
         print("Batch Add Number")
         b = int(input("Add initial Number : "))
         c = int(input("Add Last Number : "))
-        d = int(input("Add Selisih Angka : "))
+        d = int(input("Add Selisih antar-Angka : "))
         c=c+1
         if d==0:
             print("Selisih tidak bisa 0")

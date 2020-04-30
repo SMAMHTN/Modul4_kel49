@@ -1,3 +1,5 @@
+import collections
+
 a = 1
 stack = []
 show = []
@@ -31,6 +33,9 @@ while a == 1:
         if d==0:
             print("Selisih tidak bisa 0")
             print ("-"*40)
+        elif (c-b)<d :
+            print ("Selisih antar-angka tidak bisa melebihi selisih initial dan last number")
+            print ("-"*40)
         else:
             for x in range(b,c,d):
                 stack.append(x)
@@ -41,21 +46,30 @@ while a == 1:
         b = int(input("Remove Number : "))
         if b not in stack :
             print(f"Sorry,{b} not found ")
+            print ("-"*40)
         else :
             stack.remove(b)
         print ("-"*40)
 
     elif choice == 4: #Remove Highest Number
         print("Remove Highest Number")
-        stack.sort()
-        stack.pop()
-        print ("-"*40)
+        if len(stack)==0 :
+            print("Stack kosong saat ini")
+            print ("-"*40)
+        else :
+            stack.sort()
+            stack.pop()
+            print ("-"*40)
 
     elif choice == 5: #Remove Lowest Number
         print("Remove Lowest Number")
-        stack.sort()
-        stack.popleft()
-        print ("-"*40)
+        if len(stack)==0 :
+            print("Stack kosong saat ini")
+            print ("-"*40)
+        else :
+            stack.sort()
+            del stack[0]
+            print ("-"*40)
 
     elif choice == 6: #Show Stack
         print("Lihat Daftar Data (Lengkap)")

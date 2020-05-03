@@ -21,16 +21,13 @@ class MyWindow(Window):
 
             if self.low.IsChecked:
                 tabungan="Reguler"
-                gbunga=1
+                bunga="5%"
             elif self.medium.IsChecked:
                 tabungan="Gold"
-                gbunga=2
+                bunga="10%"
             elif self.high.IsChecked:
                 tabungan="Platinum"
-                gbunga=3
-
-            for x in gbunga:
-                bunga=x*5
+                bunga="20%"
 
             MessageBox.Show("Terima Kasih "+gender+" "+x+", Anda telah Membuka Tabungan  "+tabungan +" Dengan bunga per bulan "+bunga+".\n\nEmail Verivikasi telah dikirimkan ke : "+y)
             pass

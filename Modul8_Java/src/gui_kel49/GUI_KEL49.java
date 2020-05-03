@@ -9,7 +9,7 @@ package gui_kel9;
  *
  * @author zxz
  */
-public class GUI_KEL9 {
+public class GUI_KEL49 {
 
     /**
      * @param args the command line arguments

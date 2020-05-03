@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui_kel9;
+package gui_kel49;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
@@ -11,12 +11,12 @@ import java.util.ArrayList;
  *
  * @author zxz
  */
-public class KEL9 extends javax.swing.JFrame {
+public class KEL49 extends javax.swing.JFrame {
 
     /**
      * Creates new form KEL9
      */
-    public KEL9() {
+    public KEL49() {
         initComponents();
     }
 
@@ -281,7 +281,7 @@ lbKelompok.setText("-");
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new KEL9().setVisible(true);
+                new KEL49().setVisible(true);
             }
         });
     }

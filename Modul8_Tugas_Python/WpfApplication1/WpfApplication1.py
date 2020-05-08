@@ -23,16 +23,13 @@ class MyWindow(Window):
 
             if self.low.IsChecked:
                 tabungan="Reguler"
-                gbunga=1
+                bunga = "5%"
             elif self.medium.IsChecked:
                 tabungan="Gold"
-                gbunga=2
+                bunga = "10%"
             elif self.high.IsChecked:
                 tabungan="Platinum"
-                gbunga=3
-
-            for b in gbunga:
-                bunga = b*5
+                bunga="20%"
 
             if a<100000:
                 MessageBox.Show("Saldo Tidak Mencukupi")

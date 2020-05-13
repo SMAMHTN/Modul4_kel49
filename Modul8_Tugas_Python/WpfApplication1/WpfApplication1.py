@@ -10,6 +10,8 @@ class MyWindow(Window):
     def button_Click(self, sender, e):
         x = self.textboxNama.Text.ToString()
         y = self.textboxEmail.Text.ToString()
+        z = self.textboxSaldo.Text.ToString()
+        a = int(z)
 
         if x == "" or y == "" or self.ComboBoxJk.Text == "" or (self.low.IsChecked == False and self.medium.IsChecked == False and self.high.IsChecked == False) :
             MessageBox.Show("Mohon Data Datanya Dilengkapi")
@@ -21,15 +23,20 @@ class MyWindow(Window):
 
             if self.low.IsChecked:
                 tabungan="Reguler"
-                bunga="5%"
+                bunga = "5%"
             elif self.medium.IsChecked:
                 tabungan="Gold"
-                bunga="10%"
+                bunga = "10%"
             elif self.high.IsChecked:
                 tabungan="Platinum"
                 bunga="20%"
 
-            MessageBox.Show("Terima Kasih "+gender+" "+x+", Anda telah Membuka Tabungan  "+tabungan +" Dengan bunga per bulan "+bunga+".\n\nEmail Verivikasi telah dikirimkan ke : "+y)
+            if a<100000:
+                MessageBox.Show("Saldo Tidak Mencukupi")
+                pass
+            else:
+                MessageBox.Show("Terima Kasih "+gender+" "+x+", Anda telah Membuka Tabungan  "+tabungan +" Dengan bunga per bulan "+bunga+".\n\nEmail Verivikasi telah dikirimkan ke : "+y+"\n Saldo Awal anda adalah : "+z)
+                pass
             pass
         pass
     

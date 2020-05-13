@@ -33,8 +33,5 @@ class MyWindow(Window):
             pass
         pass
     
-        
-
-
 if __name__ == '__main__':
     Application().Run(MyWindow())
